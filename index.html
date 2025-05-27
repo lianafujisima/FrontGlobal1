@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <div class="logo">SOS Agora</div>
+    
+        <button class="button-sos" onclick="confirmHelp()">🚨 Preciso de Ajuda</button>
+    
+        <div class="confirmation-section">
+          <p>Você está seguro?</p>
+          <button class="status-button" onclick="confirmStatus('sim')">✅ Sim</button>
+          <button class="status-button" onclick="confirmStatus('nao')">❌ Não</button>
+        </div>
+    
+        <footer>
+          Funciona mesmo sem internet via Bluetooth Mesh
+        </footer>
+      </div>
+    
+      <script>
+        function confirmHelp() {
+          alert("Seu pedido de ajuda foi enviado! Sua localização será compartilhada quando possível.");
+        }
+    
+        function confirmStatus(resposta) {
+          if (resposta === 'sim') {
+            alert("Ótimo! Fique atento a novos alertas.");
+          } else {
+            alert("Vamos compartilhar sua localização com as autoridades. Aguarde socorro.");
+          }
+        }
+      </script>
+</body>
+</html>
