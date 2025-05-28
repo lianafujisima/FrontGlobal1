@@ -289,9 +289,6 @@ body {
   text-decoration: underline;
 }
 
-
-
-
 button {
   margin-top: 20px;
   padding: 12px;
@@ -304,4 +301,26 @@ button {
 
 button:hover {
   background-color: #007cd8;
+}
+
+/* ==chatbot=== */
+
+.chatbotbotao {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.chatbotimagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.chatbotimagem:hover {
+  transform: scale(1.1);
 }
