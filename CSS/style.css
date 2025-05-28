@@ -271,6 +271,27 @@ body {
   text-decoration: underline;
 }
 
+.consentimentobox {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.consentimentobox input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.consentimentobox a {
+  color: #0D99FF;
+  text-decoration: none;
+}
+
+.consentimentobox a:hover {
+  text-decoration: underline;
+}
+
+
+
+
 button {
   margin-top: 20px;
   padding: 12px;
