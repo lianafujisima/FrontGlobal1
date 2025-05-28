@@ -14,13 +14,68 @@ body {
   font-weight: bold;
 }
 
+
+/* ==barra navegacao== */
+.navegacao {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.navmenu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navmenu li a:hover {
+  color: #dceeff;
+}
+
+.perfillink {
+  margin-left: auto;
+  padding-left: 20px;
+}
+
+.perfilicone {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
 /* ===== FAQ ===== */
 .hfaq,
-.ffaq,
 .hintegrantes,
-.fintegrantes,
 .hcontato,
-.fcontato {
+.hindex
+{
+  background-color: #0D99FF;
+  color: white;
+  text-align: center;
+  padding: 60px 20px 0px 20px;
+}
+
+.ffaq,
+.fintegrantes,
+.fcontato,
+.findex {
   background-color: #0D99FF;
   color: white;
   text-align: center;
@@ -28,7 +83,8 @@ body {
 }
 
 .mfaq,
-.mcontato {
+.mcontato,
+.mindex {
   padding: 32px;
   max-width: 800px;
   margin: auto;
@@ -154,4 +210,77 @@ body {
   padding: 16px;
   margin-bottom: 12px;
   border-radius: 8px;
+}
+
+/* ===index=== */
+
+#botaomostrar {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #0D99FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.formulariocadastro form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulariocadastro label {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.formulariocadastro input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin-top: 4px;
+}
+
+.endereco {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: grid;
+}
+
+.endereco legend {
+  font-weight: bold;
+  color: #0D99FF;
+  margin-bottom: 10px;
+}
+
+.consentimento {
+  margin-top: 20px;
+}
+
+.consentimento a {
+  color: #0D99FF;
+  text-decoration: none;
+}
+
+.consentimento a:hover {
+  text-decoration: underline;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #0D99FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #007cd8;
 }
