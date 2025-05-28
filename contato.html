@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/contato.js" defer></script>
 </head>
 <body>
     <header class="hcontato">
@@ -23,7 +24,8 @@
         </nav>
       </header>   
       <main class="mcontato">
-        <section class="avisoimportante">
+        <button id="botaomostrar" type="button">Aperte, aviso importante</button>
+        <section id="smostrar" class="avisoimportante" style="display: none;">
           <h2>Aviso Importante</h2>
           <p>Os serviços abaixo não funcionam offline ou sem linha telefônica.</p>
         </section>
