@@ -1,6 +1,4 @@
 
-
-// ===== Validação de formulário =====
 document.getElementById('cadastroForm').addEventListener('submit', function(event) {
     let campos = [
       'nome', 'data', 'cpf',
@@ -25,6 +23,3 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
         alert('Cadastrado com sucesso!');
     }
   });
-
-// ===== Mostrar/Ocultar uma seção =====
-

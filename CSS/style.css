@@ -65,7 +65,8 @@ body {
 .hintegrantes,
 .hcontato,
 .hindex,
-.hchatbot
+.hchatbot,
+.hconsentimento
 {
   background-color: #0D99FF;
   color: white;
@@ -77,7 +78,8 @@ body {
 .fintegrantes,
 .fcontato,
 .findex,
-.fchatbot {
+.fchatbot,
+.fconsentimento {
   background-color: #0D99FF;
   color: white;
   text-align: center;
@@ -352,4 +354,54 @@ button:hover {
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid lightgray;
+}
+
+/* ==consentimento=== */
+.mconsentimento {
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  border-radius: 8px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.termos h2 {
+  color: #0D99FF;
+  margin-bottom: 20px;
+}
+
+.termos h3 {
+  margin-top: 24px;
+  color: #007cd8;
+}
+
+.termos p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+/* Botão de aceitar */
+.botaoconsentimento {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.botaoaceitar {
+  display: inline-block;
+  background-color: #0D99FF;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao-aceitar:hover {
+  background-color: #007cd8;
 }
