@@ -61,12 +61,7 @@ body {
 }
 
 /* ===== FAQ ===== */
-.hfaq,
-.hintegrantes,
-.hcontato,
-.hindex,
-.hchatbot,
-.hconsentimento
+header
 {
   background-color: #0D99FF;
   color: white;
@@ -74,12 +69,8 @@ body {
   padding: 60px 20px 0px 20px;
 }
 
-.ffaq,
-.fintegrantes,
-.fcontato,
-.findex,
-.fchatbot,
-.fconsentimento {
+
+footer {
   background-color: #0D99FF;
   color: white;
   text-align: center;
@@ -88,7 +79,8 @@ body {
 
 .mfaq,
 .mcontato,
-.mindex {
+.mindex,
+.malerta {
   padding: 32px;
   max-width: 800px;
   margin: auto;
@@ -404,4 +396,70 @@ button:hover {
 
 .botao-aceitar:hover {
   background-color: #007cd8;
+}
+
+/* ==alerta== */
+.alerta {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffe5e5;
+  border-radius: 12px;
+}
+
+.alerta h1 {
+  font-size: 35px;
+  color: #cc0000;
+  margin-bottom: 10px;
+}
+
+.alerta h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #cc0000;
+}
+
+.alerta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #cc0000;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.botao-alerta {
+  padding: 14px 28px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+.botao-sim {
+  background-color: #0D99FF;
+  color: white;
+}
+
+.botao-sim:hover {
+  background-color: #007cd8;
+}
+
+.botao-nao {
+  background-color: #cc0000;
+  color: white;
+}
+
+.botao-nao:hover {
+  background-color: #a80000;
+}
+
+.mensagem {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
 }
