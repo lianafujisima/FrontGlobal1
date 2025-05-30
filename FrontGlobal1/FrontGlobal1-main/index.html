@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Primeiro acesso</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="JS/script.js" defer></script>
+  <script src="JS/oculta.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="cabecalhologo">
+      <img src="IMAGENS/logo.png" alt="Logo SOS AGORA" class="logo">
+      <h1>Bem-vindo ao S.O.S AGORA</h1>
+    </div>
+    <nav class="navegacao">
+      <ul class="navmenu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sos.html">Pedir Socorro</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="consentimento.html">Política de Privacidade</a></li>
+      </ul>
+      <a href="perfil.html" class="perfillink">
+        <img src="IMAGENS/perfil.svg" alt="Perfil" class="perfilicone" />
+      </a>
+    </nav>
+  </header>
+  <main class="mindex">
+    <button id="botaomostrar" type="button">Aperte, aviso importante</button>
+    <section id="smostrar" class="avisoimportante">
+      <h2>Aviso Importante</h2>
+      <p>Este aplicativo funciona mesmo sem internet usando 
+        <span class="negrito">Bluetooth Mesh</span>, mas para que ele funcione corretamente 
+        é necessário o consentimento para uso de dados e localização. Se estiver offline, utilize Chatbot.
+      </p>
+    </section>
+    <section class="formulariocadastro">
+      <h2>Cadastro Inicial</h2>
+      <form id="cadastroForm">
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome"><br>
+
+        <label for="data">Data de nascimento:</label>
+        <input type="date" id="data" name="data"><br>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf"><br>
+
+        <fieldset class="endereco">
+          <legend>Endereço</legend>
+
+          <label for="logradouro">Logradouro:</label>
+          <input type="text" id="logradouro" name="logradouro">
+
+          <label for="numero">Número:</label>
+          <input type="text" id="numero" name="numero">
+
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" name="bairro">
+
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep">
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade">
+
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado">
+        </fieldset>
+        <div class="consentimentobox">
+          <input type="checkbox" id="aceite" name="aceite">
+          <label for="aceite">
+            Li e aceito a <a href="consentimento.html" target="_blank">política de privacidade e uso de dados</a>.
+          </label>
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>S.O.S AGORA - 2025</p>
+    <p>Todos os direitos reservados.</p>
+  </footer>
+
+  <a href="chatbot.html" class="chatbotbotao">
+    <img src="IMAGENS/chatbot.png" alt="Chatbot" class="chatbotimagem">
+  </a>
+</body>
+</html>
