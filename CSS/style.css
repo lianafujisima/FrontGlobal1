@@ -110,8 +110,8 @@ footer {
 
 .mfaq,
 .mcontato,
-.mindex,
-.malerta {
+.mindex {
+  width: 100%;
   padding: 32px;
   max-width: 800px;
   margin: auto;
@@ -272,7 +272,7 @@ footer {
 .formulariocadastro label {
   margin-top: 12px;
   font-weight: 600;
-  color #333;
+  color: #333;
 }
 
 .formulariocadastro input {
@@ -297,8 +297,6 @@ footer {
   color: #005A9C;
   margin-bottom: 10px;
 }
-
-
 
 .consentimentobox {
   margin-top: 20px;
@@ -357,13 +355,18 @@ button:hover {
 /* ==chatbot== */
 
 .mchatbot {
-  padding: 32px;
-  max-width: 800px;
-  margin: auto;
-  padding-bottom: 80px;
+  width: 100%;          
+  max-width: 800px;     
+  margin: 0 auto;    
+  padding: 32px 16px 80px;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 #chat {
+  max-width: 800px;
   background-color: #fcfcfc;
   border: 1px solid #ccc;
   padding: 16px;
@@ -374,23 +377,73 @@ button:hover {
 
 #entrada {
   width: 100%;
-  padding: 10px;
+  padding: 12px 44px 12px 12px;
   font-size: 16px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid lightgray;
+  box-sizing: border-box;
 }
+
+.entradacontainer {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 10px;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.inputmicrofone {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.iconemicrofone {
+  position: absolute;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+}
+
+.entradacontainer button {
+  background-color: #0D99FF;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  align-self: flex-end;
+  max-width: 160px;
+}
+
+.entradacontainer button:hover {
+  background-color: #007cd8;
+}
+
 
 /* ==consentimento=== */
 .mconsentimento {
-  padding: 30px 20px;
+  width: 100%;
+  padding: 32px;
   max-width: 800px;
   margin: auto;
-  background-color: #fcfcfc;
-  border-radius: 8px;
-  line-height: 1.6;
-  color: #333;
 }
+
+.termos{
+  width: 100%;
+  max-width: 800px;
+  margin: 60px auto;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 
 .termos h2 {
   color: #005A9C;
@@ -405,10 +458,6 @@ button:hover {
 .termos p {
   margin-top: 10px;
   text-align: justify;
-}
-
-.negrito {
-  font-weight: bold;
 }
 
 /* Botão de aceitar */
@@ -432,28 +481,18 @@ button:hover {
 }
 
 /* ==alerta== */
+
 .alerta {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
   text-align: center;
-  padding: 60px 20px;
   background-color: #ffe5e5;
-  border-radius: 12px;
-}
+  border-radius: 16px;
+  min-height: 300px;
 
-.alerta h1 {
-  font-size: 35px;
-  color: #cc0000;
-  margin-bottom: 10px;
-}
-
-.alerta h2 {
-  font-size: 25px;
-  margin-bottom: 10px;
-  color: #cc0000;
-}
-
-.alerta p {
-  font-size: 18px;
-  margin-bottom: 30px;
 }
 
 .botoes {
@@ -461,14 +500,6 @@ button:hover {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-}
-
-.alerta {
-  padding: 14px 28px;
-  font-size: 20px;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
 }
 
 .botaosim {
@@ -489,38 +520,49 @@ button:hover {
   background-color: #a80000;
 }
 
-.mensagem {
-  margin-top: 30px;
-  font-size: 25px;
-  font-weight: bold;
-  color: #333;
-}
 
-
-/* ==sos=== */
-.msos {
+/* ==sos - alerta=== */
+.msos,
+.malerta {
+  width: 100%;          
+  max-width: 800px;     
+  margin: 0 auto;    
+  padding: 32px 16px 80px;
+  box-sizing: border-box;
   padding: 40px;
   text-align: center;
 }
 
 .sos {
-  max-width: 700px;
+  width: 100%;
+  max-width: 800px;
   margin: auto;
   padding: 40px 20px;
   background-color: #ffe5e5;
   border-radius: 16px;
 }
 
-.sos h2 {
-  font-size: 32px;
+.sos h2,
+.alerta h2 {
+  font-size: 35px;
   color: #cc0000;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
-.sos p {
-  font-size: 20px;
-  color: #333;
+.sos p,
+.alerta p {
+  font-size: 25px;
+  color: #cc0000;
   margin-bottom: 30px;
+}
+
+.mensagem,
+.sosmensagem {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
 }
 
 .botaosos {
@@ -531,21 +573,16 @@ button:hover {
   padding: 20px 40px;
   border: none;
   border-radius: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .botaosos:hover {
   background-color: #a80000;
 }
 
-.sosmensagem {
-  margin-top: 30px;
-  font-size: 26px;
-  color: #333;
-}
+/* --perfil--- */
 
 .mperfil {
+  width: 100%;
   padding: 32px;
   max-width: 800px;
   margin: auto;
@@ -570,19 +607,14 @@ button:hover {
 .botaoeditar {
   background: none;
   border: none;
-  cursor: pointer;
   padding: 4px;
 }
 
 .botaoeditar img {
   width: 24px;
   height: 24px;
-  transition: transform 0.2s ease;
 }
 
-.botaoeditar img:hover {
-  transform: scale(1.1);
-}
 
 .perfil p {
   margin: 10px 0;

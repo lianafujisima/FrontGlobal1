@@ -5,7 +5,7 @@ function responder() {
     chat.innerHTML += `<p><span class="negrito">Você:</span> ${texto}</p>`;
   
     if (texto === 'como funciona?') {
-      chat.innerHTML += '<p><span class="negrito">Chatbot:</span> Ele funciona mesmo sem internet, via Bluetooth Mesh.</p>';
+      chat.innerHTML += '<p><span class="negrito">Chatbot:</span> O app funciona mesmo sem internet, via Bluetooth Mesh.</p>';
     }
     else if (texto === 'posso pedir socorro?'){
         chat.innerHTML += '<p><span class="negrito">Chatbot:</span> Se estiver em perigo, sim.</p>';

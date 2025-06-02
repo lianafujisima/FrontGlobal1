@@ -1,5 +1,6 @@
 1.Objetivo 
 2.Estrutura de pastas e arquivos
+  O projeto conta com uma pasta CSS com o arquivo style.css que 
 3.Tecnologia utilizada
 
 4.Integrantes

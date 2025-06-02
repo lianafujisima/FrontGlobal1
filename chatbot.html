@@ -31,8 +31,13 @@
         <div id="chat">
             <p><span class="negrito">Chatbot:</span> Como posso te ajudar?</p>
           </div>
-          <input type="text" id="entrada" placeholder="Digite aqui sua pergunta">
-          <button onclick="responder()">Enviar</button>
+          <div class="entradacontainer">
+            <div class="inputmicrofone">
+              <input type="text" id="entrada" placeholder="Digite aqui sua pergunta...">
+              <img src="IMAGENS/audio.png" alt="Ícone de microfone" class="iconemicrofone" title="Falar">
+            </div>
+            <button onclick="responder()">Enviar</button>
+          </div>
       </main>
 
       <footer>

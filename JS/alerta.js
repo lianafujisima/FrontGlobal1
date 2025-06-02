@@ -1,7 +1,7 @@
 function responderSim() {
-    document.getElementById('mensagem').innerText = 'Ótimo! Fique atento a novos alertas.';
+    document.getElementById('mensagem').innerText = 'Que bom! Fique bem e atento a novos alertas.';
   }
   
   function responderNao() {
-    document.getElementById('mensagem').innerText = 'Vamos compartilhar sua localização com as autoridades. Aguarde socorro!';
+    document.getElementById('mensagem').innerHTML =  'Compartilhando localização com autoridades...<br>Fique calmo, socorro a caminho!';
   }
