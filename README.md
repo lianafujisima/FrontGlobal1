@@ -25,7 +25,7 @@
     - sos.js - interação do botão de pedir socorro, que ao acionar gera uma mensagem que a localização está sendo compartilhada com autoridade.
 
   FRONTGLOBAL1:
-    - alerta.html - alerta de desastre, que na realidade não vai aparecer a opção de entrar nessa página pelo usuário. Ela vai aparecer apenas quando o app enviar o alerta. No projeto coloquei na barra de navegação para que seja mais fácil a sua visualização.
+    - alerta.html - alerta de desastre, que na realidade não vai aparecer a opção de entrar nessa página pelo usuário. Ela vai aparecer apenas quando o app enviar o alerta. No projeto coloquei na barra de navegação para que seja mais fácil a sua visualização. Para manter um design mais limpo preferimos não colocar imagens, para que o foco total do usuário seja no alerta e socorro, evitando sobrecarregar o emocional do usuário.
 
     - chatbot.html - interação do chatbot offline.
 
@@ -41,7 +41,7 @@
 
     - perfil.html - página de perfil do usuário.
 
-    - sos.html - página em que o usuário pode pedir ajuda/socorro mesmo não tendo nenhum alerta de desastre.
+    - sos.html - página em que o usuário pode pedir ajuda/socorro mesmo não tendo nenhum alerta de desastre. Para manter um design mais limpo preferimos não colocar imagens, para que o foco total do usuário seja no alerta e socorro, evitando sobrecarregar o emocional do usuário.
 
 3.Tecnologia utilizada
   As tecnologias utilizadas são:
