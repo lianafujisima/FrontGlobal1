@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     const botaoMostrar = document.getElementById("botaomostrar");
     const secaoMostrar = document.getElementById("smostrar");

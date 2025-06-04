@@ -1,3 +1,5 @@
+
+
 function responderSim() {
     document.getElementById('mensagem').innerText = 'Que bom! Fique bem e atento a novos alertas.';
   }

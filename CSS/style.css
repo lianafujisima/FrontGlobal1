@@ -40,6 +40,123 @@ body {
   max-width: 100%;
 }
 
+/* === Extra Small devices (phones, 600px and down) === */
+@media (max-width: 600px) {
+  header h1 {
+      font-size: 18px;
+  }
+
+  nav a {
+      font-size: 12px;
+      padding: 6px 8px;
+  }
+
+  h2 {
+      font-size: 16px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+}
+
+/* === Small devices (portrait tablets and large phones, 600px and up) === */
+@media (min-width: 600px) {
+  header h1 {
+      font-size: 20px;
+  }
+
+  nav a {
+      font-size: 14px;
+      padding: 8px 10px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  p {
+      font-size: 15px;
+  }
+}
+
+/* === Medium devices (landscape tablets, 768px and up) === */
+@media (min-width: 768px) {
+  header h1 {
+      font-size: 22px;
+  }
+
+  nav {
+      justify-content: space-between;
+      padding: 10px 20px;
+  }
+
+  main {
+      padding: 25px;
+  }
+
+  .card {
+      display: inline-block;
+      width: 45%;
+      margin: 2.5%;
+  }
+
+  .card img {
+      width: 200px;
+  }
+}
+
+/* === Large devices (laptops/desktops, 992px and up) === */
+@media (min-width: 992px) {
+  header h1 {
+      font-size: 26px;
+  }
+
+  nav a {
+      font-size: 16px;
+      padding: 10px 15px;
+  }
+
+  .card {
+      width: 30%;
+  }
+
+  h2 {
+      font-size: 22px;
+  }
+
+  p {
+      font-size: 18px;
+  }
+}
+
+/* === Extra Large devices (large laptops/desktops, 1300px and up) === */
+@media (min-width: 1300px) {
+  header h1 {
+      font-size: 30px;
+  }
+
+  nav {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .card {
+      width: 22%;
+  }
+
+  .card img {
+      width: 250px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  p {
+      font-size: 20px;
+  }
+}
 
 
 /* ==barra navegacao== */

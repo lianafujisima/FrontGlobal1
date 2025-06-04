@@ -19,6 +19,13 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     }
   });
 
+  let aceite = document.getElementById('aceite');
+  if (!aceite.checked) {
+    formValido = false;
+    alert('Você precisa preencher todos os campos e aceitar a política de privacidade para continuar.');
+    return; 
+  }
+
   if (!formValido) {
     alert('Por favor, preencha todos os campos.');
   } else {
@@ -27,6 +34,5 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     window.location.href = 'perfil.html';
   }
 });
-
 
 

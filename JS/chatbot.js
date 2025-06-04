@@ -1,3 +1,5 @@
+
+
 function responder() {
     let texto = document.getElementById('entrada').value.toLowerCase();
     let chat = document.getElementById('chat');
